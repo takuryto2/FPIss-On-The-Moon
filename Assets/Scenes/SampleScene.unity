@@ -455,15 +455,23 @@ PrefabInstance:
       objectReference: {fileID: 443630782}
     - target: {fileID: 3154299066680401158, guid: fe1bd16d2bf6a3e45aaeabe2b04cb75b, type: 3}
       propertyPath: jointMaxSTR
-      value: 35
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3154299066680401158, guid: fe1bd16d2bf6a3e45aaeabe2b04cb75b, type: 3}
       propertyPath: jointSpring
-      value: 7
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3154299066680401158, guid: fe1bd16d2bf6a3e45aaeabe2b04cb75b, type: 3}
       propertyPath: maxJetpackSTR
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002526710918054650, guid: fe1bd16d2bf6a3e45aaeabe2b04cb75b, type: 3}
+      propertyPath: m_YDrive.maximumForce
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002526710918054650, guid: fe1bd16d2bf6a3e45aaeabe2b04cb75b, type: 3}
+      propertyPath: m_YDrive.positionSpring
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7105017824446825897, guid: fe1bd16d2bf6a3e45aaeabe2b04cb75b, type: 3}
       propertyPath: m_LocalRotation.w
