@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public playerWeapon weapon;
+    
+
+    public new string name = "planche à tambour de combat";
+    public float damage = 1f;
+    public float range = 100f;
+
     [SerializeField] private Camera cam;
     [SerializeField] private LayerMask layerMask;
     [SerializeField] int maxBullets;
@@ -12,6 +17,7 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] AudioSource gunSFX;
     [SerializeField] AudioSource gunSFX2;
     [SerializeField] AudioSource reloadSFX;
+    
 
     void Start()
     {
@@ -39,10 +45,11 @@ public class PlayerShoot : MonoBehaviour
         RaycastHit hit;
         gunSFX.Play();
         gunSFX2.Play();
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, weapon.range, layerMask)) ;
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range, layerMask));
         {
-            print(hit.collider.name);
+            
         }
+        return;
     }
 
     private void Reload()
