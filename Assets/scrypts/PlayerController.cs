@@ -62,10 +62,10 @@ public class PlayerController : MonoBehaviour
 
         float xRot = Input.GetAxisRaw("Mouse Y");
 
-        Vector3 camRotation = new Vector3(xRot, 0, 0) * mouseSensX;
+        float camRotationX = xRot * mouseSensX;
 
         xRot = Mathf.Clamp(xRot, -90, 90);
-        motor.RotateCamera(camRotation);
+        motor.RotateCamera(camRotationX);
     }
 
     private void JetpackMove()
